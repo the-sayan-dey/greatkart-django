@@ -1,18 +1,19 @@
 # This file is distributed under the same license as the Django package.
 #
 # Translators:
-# Fery Setiawan <gembelweb@gmail.com>, 2015-2016
+# Fery Setiawan <gembelweb@gmail.com>, 2015-2016,2021-2024
 # Jannis Leidel <jannis@leidel.info>, 2011
+# oon arfiandwi (OonID) <oon.arfiandwi@gmail.com>, 2020
 # rodin <romihardiyanto@gmail.com>, 2011-2012
 # rodin <romihardiyanto@gmail.com>, 2014,2016
 msgid ""
 msgstr ""
 "Project-Id-Version: django\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-17 11:50+0200\n"
-"PO-Revision-Date: 2017-09-23 18:54+0000\n"
-"Last-Translator: rodin <romihardiyanto@gmail.com>\n"
-"Language-Team: Indonesian (http://www.transifex.com/django/django/language/"
+"POT-Creation-Date: 2025-03-25 15:04-0500\n"
+"PO-Revision-Date: 2025-04-01 15:04-0500\n"
+"Last-Translator: Fery Setiawan <gembelweb@gmail.com>, 2015-2016,2021-2024\n"
+"Language-Team: Indonesian (http://app.transifex.com/django/django/language/"
 "id/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -26,12 +27,8 @@ msgstr "%s yang tersedia"
 
 #, javascript-format
 msgid ""
-"This is the list of available %s. You may choose some by selecting them in "
-"the box below and then clicking the \"Choose\" arrow between the two boxes."
+"Choose %s by selecting them and then select the \"Choose\" arrow button."
 msgstr ""
-"Berikut adalah daftar %s yang tersedia. Anda dapat memilih satu atau lebih "
-"dengan memilihnya pada kotak di bawah, lalu mengeklik tanda panah \"Pilih\" "
-"di antara kedua kotak."
 
 #, javascript-format
 msgid "Type into this box to filter down the list of available %s."
@@ -40,18 +37,17 @@ msgstr "Ketik pada kotak ini untuk menyaring daftar %s yang tersedia."
 msgid "Filter"
 msgstr "Filter"
 
-msgid "Choose all"
-msgstr "Pilih semua"
+#, javascript-format
+msgid "Choose all %s"
+msgstr ""
 
 #, javascript-format
-msgid "Click to choose all %s at once."
-msgstr "Pilih untuk memilih seluruh %s sekaligus."
+msgid "Choose selected %s"
+msgstr ""
 
-msgid "Choose"
-msgstr "Pilih"
-
-msgid "Remove"
-msgstr "Hapus"
+#, javascript-format
+msgid "Remove selected %s"
+msgstr ""
 
 #, javascript-format
 msgid "Chosen %s"
@@ -59,19 +55,24 @@ msgstr "%s terpilih"
 
 #, javascript-format
 msgid ""
-"This is the list of chosen %s. You may remove some by selecting them in the "
-"box below and then clicking the \"Remove\" arrow between the two boxes."
+"Remove %s by selecting them and then select the \"Remove\" arrow button."
 msgstr ""
-"Berikut adalah daftar %s yang terpilih. Anda dapat menghapus satu atau lebih "
-"dengan memilihnya pada kotak di bawah, lalu mengeklik tanda panah \"Hapus\" "
-"di antara kedua kotak."
-
-msgid "Remove all"
-msgstr "Hapus semua"
 
 #, javascript-format
-msgid "Click to remove all chosen %s at once."
-msgstr "Klik untuk menghapus semua pilihan %s sekaligus."
+msgid "Type into this box to filter down the list of selected %s."
+msgstr "Ketik di dalam kotak utnuk menyaring daftar dar %s terpilih."
+
+msgid "(click to clear)"
+msgstr ""
+
+#, javascript-format
+msgid "Remove all %s"
+msgstr ""
+
+#, javascript-format
+msgid "%s selected option not visible"
+msgid_plural "%s selected options not visible"
+msgstr[0] "%s pilihan terpilih tidak muncul"
 
 msgid "%(sel)s of %(cnt)s selected"
 msgid_plural "%(sel)s of %(cnt)s selected"
@@ -85,21 +86,21 @@ msgstr ""
 "telah dilakukan akan hilang."
 
 msgid ""
-"You have selected an action, but you haven't saved your changes to "
-"individual fields yet. Please click OK to save. You'll need to re-run the "
+"You have selected an action, but you haven’t saved your changes to "
+"individual fields yet. Please click OK to save. You’ll need to re-run the "
 "action."
 msgstr ""
-"Anda telah memilih sebuah aksi, tetapi belum menyimpan perubahan ke bidang "
-"yang ada. Klik OK untuk menyimpan perubahan ini. Anda akan perlu mengulangi "
-"aksi tersebut kembali."
+"Anda telah memilih tindakan, tetapi Anda belum menyimpan perubahan ke masing-"
+"masing bidang. Silakan klik OK untuk menyimpan. Anda harus menjalankan "
+"kembali tindakan tersebut."
 
 msgid ""
-"You have selected an action, and you haven't made any changes on individual "
-"fields. You're probably looking for the Go button rather than the Save "
+"You have selected an action, and you haven’t made any changes on individual "
+"fields. You’re probably looking for the Go button rather than the Save "
 "button."
 msgstr ""
-"Anda telah memilih sebuah aksi, tetapi belum mengubah bidang apapun. "
-"Kemungkinan Anda mencari tombol Buka dan bukan tombol Simpan."
+"Anda telah memilih tindakan, dan Anda belum membuat perubahan apa pun di "
+"setiap bidang. Anda mungkin mencari tombol Buka daripada tombol Simpan."
 
 msgid "Now"
 msgstr "Sekarang"
@@ -183,6 +184,103 @@ msgstr "November"
 msgid "December"
 msgstr "Desember"
 
+msgctxt "abbrev. month January"
+msgid "Jan"
+msgstr "Jan"
+
+msgctxt "abbrev. month February"
+msgid "Feb"
+msgstr "Feb"
+
+msgctxt "abbrev. month March"
+msgid "Mar"
+msgstr "Mar"
+
+msgctxt "abbrev. month April"
+msgid "Apr"
+msgstr "Apr"
+
+msgctxt "abbrev. month May"
+msgid "May"
+msgstr "Mei"
+
+msgctxt "abbrev. month June"
+msgid "Jun"
+msgstr "Jun"
+
+msgctxt "abbrev. month July"
+msgid "Jul"
+msgstr "Jul"
+
+msgctxt "abbrev. month August"
+msgid "Aug"
+msgstr "Agu"
+
+msgctxt "abbrev. month September"
+msgid "Sep"
+msgstr "Sep"
+
+msgctxt "abbrev. month October"
+msgid "Oct"
+msgstr "Okt"
+
+msgctxt "abbrev. month November"
+msgid "Nov"
+msgstr "Nov"
+
+msgctxt "abbrev. month December"
+msgid "Dec"
+msgstr "Des"
+
+msgid "Sunday"
+msgstr "Ahad"
+
+msgid "Monday"
+msgstr "Senin"
+
+msgid "Tuesday"
+msgstr "Selasa"
+
+msgid "Wednesday"
+msgstr "Rabu"
+
+msgid "Thursday"
+msgstr "Kamis"
+
+msgid "Friday"
+msgstr "Jum'at"
+
+msgid "Saturday"
+msgstr "Sabtu"
+
+msgctxt "abbrev. day Sunday"
+msgid "Sun"
+msgstr "Ahd"
+
+msgctxt "abbrev. day Monday"
+msgid "Mon"
+msgstr "Sen"
+
+msgctxt "abbrev. day Tuesday"
+msgid "Tue"
+msgstr "Sel"
+
+msgctxt "abbrev. day Wednesday"
+msgid "Wed"
+msgstr "Rab"
+
+msgctxt "abbrev. day Thursday"
+msgid "Thur"
+msgstr "Kam"
+
+msgctxt "abbrev. day Friday"
+msgid "Fri"
+msgstr "Jum"
+
+msgctxt "abbrev. day Saturday"
+msgid "Sat"
+msgstr "Sab"
+
 msgctxt "one letter Sunday"
 msgid "S"
 msgstr "M"
@@ -210,9 +308,3 @@ msgstr "J"
 msgctxt "one letter Saturday"
 msgid "S"
 msgstr "S"
-
-msgid "Show"
-msgstr "Bentangkan"
-
-msgid "Hide"
-msgstr "Ciutkan"

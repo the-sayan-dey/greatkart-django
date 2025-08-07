@@ -1,15 +1,15 @@
 # This file is distributed under the same license as the Django package.
 #
 # Translators:
-# Aarni Koskela, 2015,2017
+# Aarni Koskela, 2015,2017,2020,2025
 msgid ""
 msgstr ""
 "Project-Id-Version: django\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-19 16:49+0100\n"
-"PO-Revision-Date: 2017-09-21 22:44+0000\n"
-"Last-Translator: Aarni Koskela\n"
-"Language-Team: Finnish (http://www.transifex.com/django/django/language/"
+"POT-Creation-Date: 2023-01-17 02:13-0600\n"
+"PO-Revision-Date: 2025-04-01 15:04-0500\n"
+"Last-Translator: Aarni Koskela, 2015,2017,2020,2025\n"
+"Language-Team: Finnish (http://app.transifex.com/django/django/language/"
 "fi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,7 +21,7 @@ msgid "PostgreSQL extensions"
 msgstr "PostgreSQL-laajennukset"
 
 #, python-format
-msgid "Item %(nth)s in the array did not validate: "
+msgid "Item %(nth)s in the array did not validate:"
 msgstr "Taulukon %(nth)s alkio ei ole kelvollinen:"
 
 msgid "Nested arrays must have the same length."
@@ -31,24 +31,14 @@ msgid "Map of strings to strings/nulls"
 msgstr "Kartta merkkijonoista merkkijonoihin tai tyhjiin (null)"
 
 #, python-format
-msgid "The value of \"%(key)s\" is not a string or null."
+msgid "The value of “%(key)s” is not a string or null."
 msgstr "Avaimen \"%(key)s\" arvo ei ole merkkijono tai tyhjä (null)."
-
-msgid "A JSON object"
-msgstr "JSON-tietue"
-
-msgid "Value must be valid JSON."
-msgstr "Arvon pitää olla kelvollista JSONia."
 
 msgid "Could not load JSON data."
 msgstr "JSON-dataa ei voitu ladata."
 
 msgid "Input must be a JSON dictionary."
 msgstr "Syötteen tulee olla JSON-sanakirja."
-
-#, python-format
-msgid "'%(value)s' value must be valid JSON."
-msgstr "%(value)s-arvo tulee olla kelvollista JSONia."
 
 msgid "Enter two valid values."
 msgstr "Anna kaksi oikeaa arvoa."
@@ -106,15 +96,10 @@ msgstr "Tuntemattomia avaimia annettiin: %(keys)s"
 
 #, python-format
 msgid ""
-"Ensure that this range is completely less than or equal to %(limit_value)s."
-msgstr ""
-"Tämän alueen tulee olla kokonaisuudessaan yhtäsuuri tai pienempi kuin "
-"%(limit_value)s."
+"Ensure that the upper bound of the range is not greater than %(limit_value)s."
+msgstr "Tämän alueen yläraja ei tule olla suurempi kuin %(limit_value)s."
 
 #, python-format
 msgid ""
-"Ensure that this range is completely greater than or equal to "
-"%(limit_value)s."
-msgstr ""
-"Tämän alueen tulee olla kokonaisuudessaan yhtäsuuri tai suurempi kuin "
-"%(limit_value)s."
+"Ensure that the lower bound of the range is not less than %(limit_value)s."
+msgstr "Tämän alueen alaraja ei tule olla pienempi kuin %(limit_value)s."
