@@ -1,0 +1,15 @@
+{% autoescape off %}
+
+
+    Hi {{ user.first_name }}, 
+
+    Your order has been received
+
+    Order number: {{ order.order_number }}
+
+    {% comment %} http://{{domain}}{% url 'activate' uidb64=uid token=token %}
+
+    If you think it's not you, please ignore this email. {% endcomment %}
+
+
+{% endautoescape %} 

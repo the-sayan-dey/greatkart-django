@@ -21,7 +21,7 @@
 
         <h4 class="card-title mb-4">Billing address</h4>
 
-        <form action="" method="POST">
+        <form action="{% url 'place_order' %}" method="POST">
 
             {% csrf_token %}
 
