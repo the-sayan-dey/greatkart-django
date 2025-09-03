@@ -188,23 +188,47 @@
 		
 	</header>
 
-	<article class="box mb-3">
-		<div class="icontext w-100">
-			<img src="{% static './images/avatars/avatar1.jpg' %}" class="img-xs icon rounded-circle">
-			<div class="text">
-				<span class="date text-muted float-md-right">24.04.2020 </span>  
-				<h6 class="mb-1">Mike John </h6>
-				
+	{% for review  in reviews %}
+
+		<article class="box mb-3">
+			<div class="icontext w-100">
+				{% comment %} <img src="{% static './images/avatars/avatar1.jpg' %}" class="img-xs icon rounded-circle"> {% endcomment %}
+				<div class="text">
+					<span class="date text-muted float-md-right">{{ review.updated_at }}</span>  
+					<h6 class="mb-1">{{ review.user.full_name }} </h6>
+
+					<div class="rating-star">
+						<span>
+							{% comment %} <i class="fa fa-star{% if review.rating == 0.5 %}-half-o{% elif review.rating < 1 %}-o {% endif %}" aria-hidden="true"></i> {% endcomment %}
+
+							<i class="{% if review.rating == 0.5 %}fas fa-star-half-alt{% elif review.rating < 1 %}far fa-star{% else %}fas fa-star{% endif %}"></i>
+
+							<i class="{% if review.rating == 1.5 %}fas fa-star-half-alt{% elif review.rating < 1 %}far fa-star{% else %}fas fa-star{% endif %}"></i>
+
+
+							<i class="{% if review.rating == 2.5 %}fas fa-star-half-alt{% elif review.rating < 2 %}far fa-star{% else %}fas fa-star{% endif %}"></i>
+
+
+							<i class="{% if review.rating == 3.5 %}fas fa-star-half-alt{% elif review.rating < 3 %}far fa-star{% else %}fas fa-star{% endif %}"></i>
+
+
+							<i class="{% if review.rating == 4.5 %}fas fa-star-half-alt{% elif review.rating < 4 %}far fa-star{% else %}fas fa-star{% endif %}"></i>
+
+
+						</span>
+					</div>
+					
+				</div>
+			</div> <!-- icontext.// -->
+			<div class="mt-3">
+				<h6>{{ review.subject }}</h6>
+				<p>
+					{{ review.review }}
+				</p>	
 			</div>
-		</div> <!-- icontext.// -->
-		<div class="mt-3">
-			<p>
-				Dummy comment Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip
-			</p>	
-		</div>
-	</article>
+		</article>
+
+	{% endfor %}
 
 	
 
