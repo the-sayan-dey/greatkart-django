@@ -15,4 +15,4 @@ Greatkart, an ecommerce website made with django. This application includes many
 3. Database: SQLite
 
 ## Project images
-![Login page](Project Images/login_page.png)
+![Login page](Project%20Images/login_page.png)
