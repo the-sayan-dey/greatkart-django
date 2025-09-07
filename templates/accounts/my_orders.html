@@ -20,33 +20,38 @@
 	<main class="col-md-9">
 		<article class="card">
 		<header class="card-header">
-			<strong class="d-inline-block mr-3">Logged in as: </strong>
-			<span>{{ user.full_name }}</span>
+			<strong class="d-inline-block mr-3">Your order history </strong>
+			
 		</header>
 		<div class="card-body">
 			<div class="row"> 
 				
-				<div class="col-md-6">
-					<div class="card">
-						<div class="card-body">
-							<h5 class="card-title">Total orders</h5>
-							<h4>{{ orders_count }}</h4>
+				
 
-							<a href="">View orders</a>
-						</div>
-					</div>
-				</div>
+				<div class="col-md-12">
+					<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Order #</th>
+      <th scope="col">Billing name</th>
+      <th scope="col">Phone</th>
+      <th scope="col">Order total</th>
+	  <th scope="col">Date</th>
+    </tr>
+  </thead>
+  <tbody>
+	{% for order in orders %}
+    <tr>
+      <th scope="row">{{ order.order_number }}</th>
+      <td>{{ order.full_name }}</td>
+      <td>{{ order.phone }}</td>
+      <td>{{ order.order_total }}</td>
+	  <td>{{ order.created_at }}</td>
+    </tr>
+	{% endfor %}
 
-				<div class="col-md-6">
-					<div class="card">
-						<div class="card-body">
-							<img src="{{ userprofile.profile_picture.url }}" alt="user profile picture" width="50" height="50" style="border-radius: 50%;">
-
-							<p class="mb-0">{{ user.email }}</p>
-
-							<p>{{ user.phone_number }}</p>
-						</div>
-					</div>
+  </tbody>
+</table>
 				</div>
 
 			</div> <!-- row.// -->
