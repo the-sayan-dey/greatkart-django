@@ -15,27 +15,27 @@ Greatkart, an ecommerce website made with django. This application includes many
 3. Database: SQLite
 
 ## Project images
-Login page:
+**Login page:**
 ![Login page](Project%20Images/login_page.png)
 
-Dashboard section:
+**Dashboard section:**
 ![Login page](Project%20Images/dashboard.png)
 
-Cart section:
+**Cart section:**
 ![Login page](Project%20Images/cart.png)
 
-Store section:
+**Store section:**
 ![Login page](Project%20Images/storepage.png)
 
-Product details:
+**Product details:**
 ![Login page](Project%20Images/product_details.png)
 
-Payment gateway:
+**Payment gateway:**
 ![Login page](Project%20Images/billing.png)
 
 ![Login page](Project%20Images/paypal.png)
 
-Reviews and ratings:
+**Reviews and ratings:**
 ![Login page](Project%20Images/reviews.png)
 
 
